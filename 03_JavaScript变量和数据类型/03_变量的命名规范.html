@@ -11,8 +11,7 @@
 <body>
   <script>
     /* 
-      规则: 一旦不符合就报错
-      规范: 建议这么做, 不按规范做也不会报错, 但是有可能会被视为异类
+      一丶规则: 一旦不符合就报错
     */
     //  1.支持_开头
     var _name = 'ok'
@@ -34,8 +33,26 @@
     // 保留字将来有可能会被提升为关键字
     // var var = 1;
 
-    var ok = 1
-    console.log(ok)
+    // 6.严格区分大小分
+    var a = 1
+    a = 3
+    var A = 2
+    console.log(a, A)
+
+    // 二丶规范: 建议这么做, 不按规范做也不会报错, 但是有可能会被视为异类
+    // 定义变量的时候使用小驼峰
+    var userName = 'ywz101'
+
+    // 定义类的时候使用大驼峰
+    class MyAxios {
+
+    }
+
+    // 命名要见名知意
+    function getSum(num1, num2) {
+      return num1 + num2
+    }
+
   </script>
 </body>
 

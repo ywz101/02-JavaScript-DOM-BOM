@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09_Number类型(二)</title>
+</head>
+
+<body>
+  <script>
+    // 1.十进制
+    var num1 = 111222333
+
+    // 2.十六进制 0x
+    var num2 = 0x111
+    console.log(num2)
+    console.log(0x286)
+
+    // 3.八进制 0o
+    console.log(0o111)
+
+    // 4.二进制 0b
+    console.log(0b111)
+
+    /*
+      数字表示的范围:
+        * 最小正数值: Number.MIN_VALUE
+          console.log(Number.MIN_VALUE) // 科学计数法: 5e-324
+        * 最大正数值: Number.MAX_VALUE
+          console.log(Number.MAX_VALUE) // exponent(指数) -> e
+          1.7976931348623157e+308
+
+        * isNaN?(是非数字吗?)
+        * 用于检测非数字的, 如果检测对象是数字结果false, 否则true
+          console.log(isNaN(NaN)) // true
+          console.log(isNaN(123)) // false
+    */
+
+  </script>
+</body>
+
+</html>
