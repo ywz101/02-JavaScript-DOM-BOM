@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04_JavaScript的交互方式</title>
+</head>
+
+<body>
+  <script>
+    // 交互方式一: alert() 警示框
+    // 方法说明: 接受一个参数
+    // 效果查看: 弹窗查看
+    // alert('HelloWorld')
+
+    // 交互方式二: console.log() 输出到控制台
+    // 方法说明: 接受多个参数
+    // 效果查看: 在浏览器中的开发者工具中的控制台查看
+    // 一个参数
+    // console.log(1)
+    // 多个参数, (参数列表的形式)
+    // console.log(1, 2, 3)
+
+    // 交互方式三: document.write 浏览器页面查看
+    // 方法说明: 接收多个参数, 最终会以字符串的形式呈现
+    // 效果查看: 浏览器页面查看
+    // document.write(1, 2, 3)
+    // document.write('1')
+
+    // 交互方式四: prompt 在浏览器接受用户输入
+    // 方法说明: 接受一个参数
+    // 效果查看: 在浏览器接受用户输入
+    var age = prompt('您的年龄是:')
+    // 普通字符串拼接
+    // document.write('我今年' +  + age + '岁')
+    // 模板字面量
+  //   document.write(`我今年
+  // ${age}岁`)
+
+  console.log('我今年\n' + age + '岁')
+
+      console.log(`我今年
+${age}岁`)
+  </script>
+</body>
+
+</html>

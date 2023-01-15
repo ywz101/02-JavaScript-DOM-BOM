@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      规则: 一旦不符合就报错
+      规范: 建议这么做, 不按规范做也不会报错, 但是有可能会被视为异类
+    */
+    //  1.支持_开头
+    var _name = 'ok'
+    console.log(_name)
+
+    // 2.支持$开头
+    var $name = 'ok2'
+    console.log($name)
+
+    // 3.所有英文字母开头
+    var myName = 'ywz101'
+    // var myname = 'ywz102'
+    // console.log(myName, myname)
+
+    // 4.其它字符
+    // 字母(a_zA_Z)丶下划线(_)丶美元符($)丶数字(0_9)
+
+    // 5.不能使用关键字和保留字
+    // 保留字将来有可能会被提升为关键字
+    // var var = 1;
+
+    var ok = 1
+    console.log(ok)
+  </script>
+</body>
+
+</html>
