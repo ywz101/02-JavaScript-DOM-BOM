@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14_undefined类型</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      undefined 类型只有一个值, 就是特殊值 undefined
+        * 如果我们声明一个变量, 但是没有对其进行初始化时, 它默认是 undefined
+    */
+   var message 
+   console.log(message) // message = undefined
+   console.log(message === undefined) // true
+   console.log(undefined === undefined) // true
+
+   var info1
+   console.log(info1 === info2) // true
+
+   /* 
+      两个注意事项:
+        1. 最好在变量定义的时候进行初始化, 而不只是声明一个变量
+        2. 不要显示的将一个变量赋值为undefined
+        3. 如果变量刚开始什么都没有, 我们可以初始化为0丶空字符串丶null等值       
+        var info1 = 0
+        var info2 = ''
+        var info = null
+   */
+  </script>
+</body>
+
+</html>

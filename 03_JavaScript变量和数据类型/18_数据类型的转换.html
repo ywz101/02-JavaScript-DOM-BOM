@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>18_数据类型的转换</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      在开发中, 我们可能会在不同的数据类型之间进行某些操作
+        * 比如把一个string类型的数字和另外一个number类型的数据进行运算
+           console.log('1' - 1) // 0
+
+        * 比如把一个string类型的文本和另外一个number类型的数字进行相加
+           console.log('1a' + 1) // 1a1 (字符串拼接)
+
+        * 比如把一个string类型或者number类型的内容, 当做一个boolean类型进行判断
+            if ('') { // ''会被隐式转换为false
+              console.log('ok')
+            }
+
+            if ('.') { // '.'会被隐式转换为true
+              console.log('ok')
+            }
+          
+            if (0) { // 0会被隐式转换为false
+              console.log('ok')
+            }
+          
+            if (1) { // 0会被隐式转换为true
+              console.log('ok')
+            }
+          
+            if (-1) { // -1会被隐式转换为true
+              console.log('ok')
+            }
+
+        * 也就是开发中, 我们经常需要对数据类型进行转换:
+            1.大多数情况下, 运算符和函数会自动将赋予它们的值转换为正确的类型, 这是一种隐式转换
+            2.我们也可以, 通过显示的方式来对数据类型进行转换
+    */
+
+
+  </script>
+</body>
+
+</html>

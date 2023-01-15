@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21_布尔类型Boolean的转换</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      布尔(Boolean)类型转换是最简单的
+      它发生在逻辑运算中, 但是也可以通过调用Boolean()显式地进行转换
+
+      转换规则下:
+        * 直观上为 "空"的值(0丶空字符串丶null丶undefined丶NaN)
+           console.log(Boolean(0))  // false
+           console.log(Boolean('')) // false
+           console.log(Boolean(null)) // false
+           console.log(Boolean(undefined)) // false
+           console.log(Boolean(NaN)) // false
+
+        * 其它的值变成 true
+
+      注意事项: 包含0的字符串 "0" 是 true
+        一些编程语言(比如PHP)视 "0"为false.
+        但在JavaScript中, 非空的字符串总是true
+    */
+  </script>
+</body>
+
+</html>

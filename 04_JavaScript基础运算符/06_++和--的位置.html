@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06_++和--的位置</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      1.运算符 ++ 和 -- 可以置于变量前, 也可以置于变量后
+        * 当运算符置于变量后, 被称为 "后置形式" counter++
+        * 当运算符置于变量前, 被称为 "前置形式" ++counter
+        * 两者都做同一件事, 将变量counter与1相加
+        * 
+      
+      2.它们有什么区别吗?
+        * 有, 但只有当我们使用 ++/-- 的返回值时才能看到区别
+        * 如果自增/自减的值不会被使用, 那么两者形式没有区别
+        * 如果我们想要对变量进行自增操作, 并且需要立刻使用直接后的值, 那么我们需要前置自增
+        * 前置自增返回一个新的值, 但后置自增返回原来的值
+              var num1 = 3
+              ++num1
+              console.log(num1) // 4
+
+              var num2 = 6
+              num2++
+              console.log(num2) // 7
+
+              var num1 = 5
+              var num2 = 6
+              // 后置自增: 先使用, 再自增(+1)
+              console.log(++num1 + num2++) // 6 + 6, num2: 7
+              console.log(num1, num2)
+    */
+
+
+  </script>
+</body>
+
+</html>

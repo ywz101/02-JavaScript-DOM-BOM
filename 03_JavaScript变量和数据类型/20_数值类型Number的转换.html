@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20_数值类型Number的转换</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      1.其它类型也可能会转成数值类型
+
+      2.转换方式一: 隐式转换
+        * 在算数运算中, 通常会将其他类型转换成数字类型来进行运算
+          比如 '6' / '2'
+             console.log('6' / '2') // 3
+             console.log(typeof('6' / '2')) // number
+        * 但是如果是+运算, 并且其中一边字符串, 那么还是按照字符串拼接
+
+      3.转换方式二: 显示转换
+        * 我们也可以使用Number()函数来进行显式的转换
+           console.log(Number('1')) // 1
+           console.log(typeof(Number('1'))) // number
+           console.log(Number('1a')) // NaN: Not a Number(非数字)
+
+      4.其他类型转换数值的规则:
+        undefined   值: NaN
+        console.log(Number(undefined)) // NaN
+        
+        null 值: 0
+           console.log(Number(null)) // null -> 0
+           var obj = null
+           if (obj) { // null -> 0 -> false
+            console.log('ok')
+           }
+
+        true 值: 1
+        false 值: 0
+            console.log(Number(true)) // 1
+            console.log(Number(false))// 0
+
+        string1: 去掉首尾空格的纯数字字符串中含有的数字
+            console.log(Number('   1323   ')) // 1323
+        空字符串 值: 0
+            console.log(Number('')) // '' -> 0
+            console.log(Number('133a?')) // NaN
+    */
+
+
+
+  </script>
+</body>
+
+</html>
