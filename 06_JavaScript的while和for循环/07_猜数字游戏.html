@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07_猜数字游戏</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      规则:
+        1.电脑随机生成一个0-99之间的数字
+        2.玩家有7次猜测的机会
+        3.玩家猜测一个数字, 输入到程序中
+        4.电脑根据输入的数字弹窗: 猜大了/猜小了/猜对了
+        5.猜对了, 那么游戏, 显示恭喜您
+        6.7次机会用完打印, 您的次数用完了, 您失败了
+    */
+
+    function getRandomInt(min, max) {
+      min = Math.ceil(min)
+      max = Math.floor(max)
+      return Math.floor(Math.random() * (max - min)) + min
+    }
+    var num = getRandomInt(0, 100)
+    var count = 0
+    for (var i = 1; i <= 7; i++) {
+      var userNum = prompt('请猜数字:')
+      if (userNum > num) {
+        alert('猜大了')
+      } else if (userNum < num) {
+        alert('猜小了')
+      } else {
+        alert('猜对了')
+        alert('恭喜您')
+        break
+      }
+      count += i
+    }
+    if (count === 7) {
+      document.write('您的次数用完了, 你失败了')
+    }
+
+  </script>
+</body>
+
+</html>

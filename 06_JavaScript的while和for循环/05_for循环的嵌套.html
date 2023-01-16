@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05_for循环的嵌套</title>
+  <style>
+    span {
+      display: inline-block;
+      width: 70px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    /* 
+      案例一: 页面渲染6行6列的爱心
+          for (var i = 0; i < 6; i++) {
+            for (var j = 0; j < 6; j++) {
+              document.write(` ❤ `)
+            }
+            document.write('<br>')
+          }
+
+      案例二: 页面渲染三角形, 从尖朝上
+          for (var i = 0; i < 6; i++) {
+            for (var j = 0; j <= i; j++) {
+              document.write(` ❤ `)
+            }
+            document.write('<br>')
+          }
+      案例三: 九九乘法表
+        for (var i = 1; i < 10; i++) {
+          for (var j = 1; j <= i; j++) {
+            document.write(`<span>${j}x${i}=${j * i}</span>`)
+          }
+          document.write('<br>')
+        }
+    */
+
+
+  </script>
+</body>
+
+</html>

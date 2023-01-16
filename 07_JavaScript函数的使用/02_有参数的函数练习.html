@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02_有参数的函数练习</title>
+</head>
+
+<body>
+  <script>
+    // 练习一: 传入一个名字, 对这个人say Hello
+    function sayHelloToSomeone(name) {
+      return `Hello ${name}`
+    }
+    console.log(sayHelloToSomeone('ywz101'))
+
+    // 练习二: 为某个朋友唱生日歌
+    function singToFried(name) {
+      return `Happy birthday to you,
+Happy birthday to you,
+Happy birthday to ${name}`
+    }
+    console.log(singToFried('ywz101'))
+
+    // 练习三: 传入两个数字, 计算两个数字的和, 并且打印结果
+    function getSum(num1, num2) {
+      console.log(num1 + num2)
+    }
+    getSum(10, 90)
+  </script>
+</body>
+
+</html>
