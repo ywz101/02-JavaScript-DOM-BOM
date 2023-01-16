@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05_arguments参数</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      事实上在函数有一个特别的对象: arguments对象
+        1.默认情况下, arguments对象是所有(非箭头)函数中都可用的局部变量
+        2.该对象中存放着所有的调用者传入的参数, 从0位置开始, 依次存放
+        3.arguments变量的类型是一个object类型(array-like), 不是一个数组, 但是和数组的用法看起来很相似
+        4.如果调用者传入的参数多于函数接收的参数, 可以通过arguments去获取所有的参数
+    */
+    function foo() {
+      // return arguments
+      // var arr = Array.from(arguments)
+      // arr.push(5)
+      var arr = Array.from(arguments)
+      arr.push(5)
+      return arr
+    }
+    console.log(foo(1, 'a', 3, 4))
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09_局部变量和外部变量</title>
+</head>
+
+<body>
+  <script>
+    /*
+      在JS中ES5之前没有块级作用域的概念, 但是函数可以定义自己的作用域
+        1.作用域表示一些标识符的作用有效范围
+        2.函数的作用域表示在函数内部定义变量, 只有在函数内部可以被访问到
+            function foo() {
+              // 函数作用域也被称为局部(函数)作用域
+              // num它是局部变量
+              var num = 1
+              console.log(num)
+            }
+            foo()
+            // 外部变量
+            var num2 = 2
+        外部变量和局部变量的概念:
+          * 定义在函数内部的变量, 被称之为局部变量
+          * 定义在函数外部的变量, 被称之为外部变量
+        
+        什么是全局变量?
+          * 在函数之外声明的变量, 称之为全局变量
+                    function foo() {
+            // 针对foo函数而言它依然是一个局部变量
+            // 针对于bar函数而言num2是外部变量, 但是它不属于全局变量
+                    var num2 = 2
+                    function bar() {
+                      // 局部变量
+                      var num1 = 1
+                    }
+                    }
+
+          * 全局变量在任何函数中都是可见(访问)的
+          *     // 全局变量, 所处的作用域是全局作用域
+                var a = 1
+                function foo() {
+                  console.log(a)
+                  function bar() {
+                    console.log(a)
+                  }
+                  bar()
+                }
+                foo()
+          
+          * 通过var声明的全局变量会在window对象上添加一个属性
+              // 全局对象window
+              var a = 10
+
+          * 在函数中, 访问变量的顺序是什么呢?
+              1.优先访问自己函数中的变量, 没有找到时, 在外部中访问
+                  var num = 2
+                  function foo() {
+                    var num = 1
+                    console.log(num) // 1
+                  }
+                  foo()
+    */
+  </script>
+</body>
+
+</html>

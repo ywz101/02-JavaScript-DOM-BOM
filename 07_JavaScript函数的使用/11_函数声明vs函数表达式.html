@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11_函数声明vs函数表达式</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      在开发中, 函数的声明和函数表达式有什么区别:
+        1.首先, 语法不同
+         * 函数声明: 在主代码流中声明为单独的语句的函数
+         function foo() {}
+         * 函数表达式: 在一个表达式中或另一个语法结构中创建的函数
+         var foo = function () {}
+
+        2.其次, JS创建函数的时机是不同的
+         * 函数表达式是在代码执行到达时被创建, 并且仅从那一刻起可用
+         * 函数声明的形式, 在函数声明被定义之前, 它就可以被调用
+            1.这是内部算法的原故
+            2.当js准备运行脚本时, 首先会在脚本中寻找全局函数声明, 并创建这些函数
+
+        3.开发中如何选择呢?
+          * 当我们需要声明一个函数时, 首先考虑函数声明语法
+          * 它能够为组织代码提供更多的灵活性, 因为我们可以在声明这些之前调用这些函数
+    */
+
+  </script>
+</body>
+
+</html>

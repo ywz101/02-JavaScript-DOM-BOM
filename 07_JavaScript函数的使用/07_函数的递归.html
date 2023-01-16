@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07_函数的递归</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      1.事实上函数调用自己还有一个专业的名词, 叫做递归
+      2.递归是一种重要的编程思想:
+        * 将一个复杂的任务, 转化成可以重复执行的相同任务
+    */
+
+    // 案例: 实现一个自己的幂函数pow
+    // a的n次方
+    // es7 **
+    function power(a, n) {
+      var result = 1
+      for (var i = 0; i < n; i++) {
+        result *= a
+      }
+      return result
+    }
+    console.log(power(2, 5))
+  </script>
+</body>
+
+</html>

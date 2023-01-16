@@ -6,22 +6,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>04_函数的练习</title>
+  <link rel="icon" href="https://www.chuankeba.com/wp-content/uploads/2022/05/favicon2-150x150.png">
 </head>
 
 <body>
   <script>
-    /* 
-      练习二: 定义一个函数, 传入宽高, 计算矩形区域的面积
-    */
+
+    // 练习二: 定义一个函数, 传入宽高, 计算矩形区域的面积
     function getRectangularArea(width, height) {
       return width * height
     }
     console.log(`面积1: ${getRectangularArea(10, 30)}`)
     console.log(`面积2: ${getRectangularArea(5, 6)}`)
+
+    // 练习三: 定义一个函数, 传入半径, 计算圆形的面积
     function getCirCleArea(r) {
       return (Math.PI * r ** 2).toFixed(2)
     }
     console.log(getCirCleArea(3))
+
+    // 练习四: 定义一个函数, 传入n (n为正整数), 计算1~n数字的和
+    // var n = +prompt('请输入1个正整数:')
+    // var sum = 0
+    // function getOneToNSum(n) {
+    //   if (n <= 0) {
+    //     console.log('ok')
+    //     return 
+    //   }
+    //   for (var i = 1; i <= n; i++) {
+    //     sum += i
+    //   }
+    //   return sum
+    // }
+    // var result = getOneToNSum(n)
+    // console.log(result)
+
+    // 实站函数练习: 传入一个数字, 可以根据数字转化成显示为 亿、万文字显示的文本
+    
+    // var num = +prompt('请输入一个数:')
+    var playCount1 = 130661024
+    var playCount2 = 13_0000_1024
+    var playCount3 = 24_1024
+
+    function formatNumber(num) {
+      if (num > 10_0000_0000) {
+        num = parseInt(num / 1_0000_0000) + '亿'
+      } else if (num > 10_0000) {
+        num = parseInt(num / 10000) + '万'
+      }
+      return num
+    }
+    console.log(formatNumber(playCount1))
+    console.log(formatNumber(playCount2))
+    console.log(formatNumber(playCount3))
+
   </script>
 </body>
 

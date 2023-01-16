@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06_函数中调用函数</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      在开发中, 函数内部是可以调用另外一个函数的
+    */
+    function foo() {
+      console.log('foo函数被调用')
+    }
+
+    function bar() {
+      foo()
+    }
+    bar()
+
+
+    /* 
+      既然函数中可以调用另外一个函数, 那么函数是否可以调用自己呢?
+        1.是可以的
+        2.但是函数有一个结束条件, 否则会无限调用, 造成报错(堆栈溢出)
+    */
+   var count = 1
+   function bar() {
+    console.log(count++)
+    bar()
+   }
+   bar(count)
+  </script>
+</body>
+
+</html>

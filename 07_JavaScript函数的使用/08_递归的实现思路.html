@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08_递归的实现思路</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      1.另一种实现思路是递归实现:
+        * 这是因为在数学上 x的n次方 = x * x的(n - 1)次方
+        * 2的3次方 = 2 * 2 (3 - 1)次方
+        * 2的n次方 = 2 * 2 (n-1)次方
+    */
+    function power(x, n) {
+      // x的1次方就是x本身, 作为终止条件
+      if (n === 1) return x
+      return x * power(x, n - 1)
+    }
+    var result = power(2, 5)
+    console.log(result)
+  </script>
+</body>
+
+</html>
