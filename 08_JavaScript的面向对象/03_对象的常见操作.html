@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03_对象的常见操作</title>
+</head>
+
+<body>
+  <script>
+    var info = {
+      name: 'ywz101',
+      age: 18
+    }
+    // 1.访问对象的属性
+    console.log(info.name) // ywz101
+    var age = info.age
+    console.log(age)
+
+    // 2.修改对象的属性
+    info.name = 'kobe'
+    info.age = 30
+    console.log(info)
+
+    // 3.添加对象的属性
+    info.height = 1.98
+    info.address = '洛杉矶'
+    console.log(info)
+
+    // 4.删除对象的属性
+    delete info.age
+    console.log(info)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04_方括号和引用的使用</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      为什么需要使用方括号呢?
+        1.对于多次属性来说, JavaScript是无法理解的
+
+        2.对象点符号key(object.key)
+          * 不包含空格
+          * 不以数字开头
+          * 也不包含特殊字符($和_)
+    */
+    
+    // 无法理解的属性
+    // var info = {
+    //   'good friend': 'ywz101',
+    // }
+
+    // console.log(info['good friend'])
+    var message = 'Hello World'
+
+    var obj = {
+      'good friend': 'why',
+      [message]: '你好, 世界',
+      ['message']: '你好, 世界2'
+    }
+
+    console.log(obj['good friend']) // why
+    console.log(obj[message])
+    console.log(obj.message)
+  </script>
+</body>
+
+</html>

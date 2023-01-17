@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01_认识对象类型</title>
+</head>
+
+<body>
+  <script>
+    var name = '张三'
+    var age = 18
+    var height = 1.88
+    console.log(name)
+    console.log(age)
+    console.log(height)
+
+    var ZhangSan = {
+      // key: value
+      name: '张三',
+      age: 18,
+      height: 1.88,
+      // 方法(函数)
+      // 普通写法
+      running: function () {
+
+      },
+      // 最佳实践
+      running() {
+        console.log('跑步')
+      },
+      studying() {
+        console.log('学习')
+      },
+      working() {
+        console.log('工作')
+      }
+    }
+    console.log(ZhangSan)
+  </script>
+</body>
+
+</html>

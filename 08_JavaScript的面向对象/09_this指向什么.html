@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09_this指向什么</title>
+</head>
+
+<body>
+  <script>
+    // 情况一: 在非严格模式下, 普通(非箭头)函数中, this指向全局对象window
+    // function foo() {
+    //   console.log(arguments) // Arguments[1, 'b', 3]
+    //   console.log(this) // window
+    // }
+    // foo(1, 'b', 3)
+
+    // 情况二: 如果函数被引用并且调用, 那么它的this指向这个对象
+    // var obj = {
+    //   name: 'ywz101',
+    //   running: function running() {
+    //     console.log(this) // obj对象 
+    //   }
+    // }
+    // // obj.running()
+
+    // var fn = obj.running
+    // fn() // this -> window
+
+    function bar() {
+      console.log(this) // this -> obj对象
+    }
+
+    var obj = {
+      name: 'ywz101',
+      bar: bar
+    }
+    obj.bar()
+  </script>
+</body>
+
+</html>

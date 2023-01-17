@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02_创建对象和使用对象</title>
+</head>
+
+<body>
+  <script>
+    /*
+      对象的创建方法有很多, 包括三种:
+        1.对象字面量
+          var obj = {}
+
+        2.new Object+动态添加属性
+          var obj = new Object()
+
+        3.new 其他类
+            class MyAxios {
+
+            }
+          new MyAxios()
+
+        4. 属性之间以逗号分隔的
+          var obj = {
+            // 逗号分隔
+            name: 'xxx',
+            age: 18
+          }
+
+        5. 对象的使用过程包括如下操作:
+          1.访问对象的属性
+          2.修改对象的属性
+          3.添加对象的属性
+          4.删除对象的属性
+
+        6.访问不存在的属性, 会返回undefined
+    */
+    var obj = {
+      name: 'ywz101',
+      age: 18
+    }
+    // 访问对象属性方式一
+    console.log(obj.name)
+    // 访问对象属性方式二
+    console.log(obj['name'])
+    // 修改对象的属性
+    obj.name = 'ywz-101'
+    obj['age'] = 19
+    console.log(obj.name)
+    console.log(obj.age)
+    // 添加对象的属性
+    obj.height = 1.88
+    console.log(obj)
+    console.log(obj.height)
+    // 删除对象的属性
+    delete obj.height
+    console.log(obj)
+    // 访问不存在的属性, 会返回undefined
+    console.log(obj.address)
+  </script>
+</body>
+
+</html>

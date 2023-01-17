@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08_JavaScript一些现象</title>
+</head>
+
+<body>
+  <script>
+    // 现象一: 引用类型
+    // var info = {
+    //   name: 'why',
+    //   friend: {
+    //     name: 'kobe' // -> { name: 'james' }
+    //   }
+    // }
+
+    // var friend = info.friend // { name: 'kobe' }
+    // friend.name = 'james' // { name: 'james' }
+    // console.log(info.friend.name) // james
+
+    // 现象二: 值传递
+    // function foo(a) {
+    //   a = 200
+    // }
+    // var num = 100
+    // foo(num)
+    // console.log(num) // 100
+
+    // 现象三: 函数传递内容-引用传递-修改引用地址
+    // function foo(a) {
+    //   a = {
+    //     name: 'why' 
+    //   }
+    // }
+    // var obj = { // 0x100
+    //   name: 'obj'
+    // }
+    // foo(obj)
+    // console.log(obj) // { name: 'obj' }
+
+    // 现象四: 引用传递-修改引用属性
+    function foo(a) {
+      a.name = 'ywz101'
+    }
+    var obj = {
+      name: 'obj'
+    }
+    foo(obj)
+    console.log(obj) // 'ywz101'
+  </script>
+</body>
+
+</html>

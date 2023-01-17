@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07_栈内存和堆内存</title>
+</head>
+
+<body>
+  <script>
+    var name = 'why'
+    var age = 18
+    var obj = {
+      foo: 'foo',
+      bar: 123
+    }
+    var nickName = 'coder' + name 
+    console.log(name, nickName)
+
+    var info = obj
+    info.foo = '哈哈哈哈'
+    console.log(obj.foo) // '哈哈哈哈'
+    console.log(info.foo) // '哈哈哈哈'
+  </script>
+</body>
+
+</html>
