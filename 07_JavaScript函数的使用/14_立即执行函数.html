@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14_立即执行函数</title>
+</head>
+
+<body>
+  <script>
+    /* 
+      什么是立即执行函数?
+        1.专业名字: Immediately-Invoked-Function-Expression
+
+        2.表达的含义是一个函数定义完后被立即执行
+          2.1.第一部分是定义了一个匿名函数, 这个函数有自己独立的作用域, 匿名函数使用小括号包裹可以避免报错
+          2.2.第二部分是后面的(), 表示这个函数被执行了
+
+        3.立即调用函数表达式有什么用?
+          会创建一个独立的执行上下文环境, 可以避免外界访问或修改内部的变量, 也避免了对内部变量的修改
+    */
+    (function () {
+      var num = 1
+    })()
+    
+    
+  </script>
+</body>
+
+</html>
